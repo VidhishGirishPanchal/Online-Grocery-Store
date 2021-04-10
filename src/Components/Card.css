@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: white;
+  /* color: white; */
+  border-radius: 50px;
+  width: 50%;
+  /* height: 300px; */
+  margin: auto;
+  text-align: left;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  /* margin: 5%; */
+}
+.flexing {
+  display: flex;
+}
+.name {
+  font-size: 50px;
+  /* font-style: bold; */
+}
+.description {
+  color: #626262;
+  font-size: 20px;
+  position: relative;
+  bottom: 30px;
+}
+.price {
+  font-size: 20px;
+}
+.pic {
+  border-radius: 100%;
+  width: 200px;
+  position: relative;
+  bottom: 30px;
+  /* Come here to add useState for quantity */
+  margin-bottom: 10px;
+}
+.photo {
+  position: relative;
+  left: -60px;
+  /* bottom: 10px; */
+  padding: 5%;
+}
+.text {
+  position: relative;
+  left: 50px;
+}
+.plus {
+  background-color: white;
+  color: rgb(21, 255, 0);
+  border-radius: 100%;
+  position: relative;
+  bottom: 20px;
+  left: 200px;
+}
+.plus:hover {
+  cursor: pointer;
+}
