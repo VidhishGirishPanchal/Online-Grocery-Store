@@ -10,6 +10,7 @@ function Homedivfirst() {
             <p className="bigfont">One Stop for <br /> All Groceries ! </p>
           
             <img src={Addtocart} alt="Logo" className="addtocartimg" />
+            
         </div>
         </div>
         </>

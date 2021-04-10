@@ -1,8 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Card.css";
-// import AddCircleIcon from '@material-ui/icons/AddCircle';
+import AddSub from "./AddSub";
+
 
 function Card(props) {
+
+    const [cart, setCart] = useState([
+        {
+                key: 1,
+                title: "Banana",
+                description: "Very good fruit and enriched with vitamins.Very good fruit and enriched with vitamins",
+                price: 15,
+                imgsrc: "https://dailyvery.in/welcome/wp-content/uploads/2019/10/Banana.jpg"
+        }
+    ]);     
+    function AddItem(newCartItem){
+        setCart((prevArray)=>{
+                return [...prevArray, newCartItem];
+        })
+    } 
+    // console.log(cart);
+
     return (
         <div className="main">
         <div className="card">
@@ -12,13 +30,13 @@ function Card(props) {
                 
                 <p className="name">{props.title}</p>
                 <p className="description">{props.description}</p>
-                <p className="price">Price : Rs.{props.price}</p>
+                <p className="price">Price : Rs.{props.price}/kg</p>
             </div>
                 
             <div className="photo">
-            <i className="fas fa-3x fa-plus-circle plus"></i>
+            <div onClick={AddItem}><i className="fas fa-3x fa-plus-circle plus" onClick={AddItem}></i></div>
                 <img  alt="pic" className="pic" src={props.imgsrc} />
-                
+              <AddSub />
             </div>
             </div>
             </div>
@@ -26,7 +44,8 @@ function Card(props) {
     )
 }
 
-export default Card
+
+export default Card;
 
 {/* <Card 
     title="Banana"

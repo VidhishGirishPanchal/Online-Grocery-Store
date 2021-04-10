@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Fruits from "./Fruits";
 import Vegetables from "./Vegetables";
 import MyCart from "./MyCart";
+import Footer from "./Components/Footer";
 import {BrowserRouter as Router, Switch, Route, Redirect, Link} from "react-router-dom";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       </Route>
       <Redirect to="/" />
       </Switch>
+      <Footer />
     </Router>
   );
 }

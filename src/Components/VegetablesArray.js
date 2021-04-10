@@ -1,6 +1,6 @@
 const vegetablesarray = [
     {
-        key: 1,
+        key: 3,
         title: "Potato",
         description: "Potatoes are low in calories — a medium-sized baked potato contains only about 110 calories.",
         price:"15",
@@ -8,7 +8,7 @@ const vegetablesarray = [
 
     },
     {
-        key: 2,
+        key: 4,
         title: "Tomato",
         description: "The water content of tomatoes is around 95%. The other 5% consists mainly of carbohydrates and fiber.",
         price:"20",

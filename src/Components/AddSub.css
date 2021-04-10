@@ -1,0 +1,25 @@
+.item {
+  padding: 2%;
+}
+span {
+  font-size: 30px;
+}
+.subtract {
+  color: red;
+}
+.subtract:hover {
+  cursor: pointer;
+  color: darkorange;
+}
+.add {
+  color: blue;
+}
+.add:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+.mainin {
+  position: relative;
+  left: 55px;
+  bottom: 20px;
+}
